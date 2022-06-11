@@ -6,7 +6,6 @@
 	padding: 0;
 	font-family: "Source Sans Pro", sans-serif;
 	box-sizing: border-box;
-	width: 100%;
 }
 body {
 	display: flex;
@@ -49,25 +48,10 @@ nav a:hover {
 }
 /*------------- MAIN ---------------*/
 main {
-	width: 1024px;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-}
-#banner1 {
-	width: 100%;
-	height: 425px;
-	background-image: url(../assets/recepcao.png);
-	background-size: cover;
-	display: flex;
-	justify-content: left;
-	align-items: center;
-}
-#banner1 h1:first-of-type {
-	color: aliceblue;
-	font-weight: 600;
-	padding: 30px;
-	font-size: xx-large;
 }
 p,
 h2,
@@ -79,24 +63,77 @@ h2,
 h3 {
 	padding: 40px 0 20px 0;
 }
-#sobre {
-	width: 600px;
-	display: flex column;
+/*------------- BANNER ---------------*/
+#banner1 {
+	width: 100%;
+	height: 500px;
+	background-image: url(../assets/recepcao.png);
+	background-size: cover;
+	display: flex;
+	justify-content: center;
 	align-items: center;
 }
-.div-2 {
-	width: 100%;
+#banner1 div {
 	display: flex;
-	justify-content: space-between;
-	margin-top: 30px;
+	justify-content: left;
+	align-items: center;
+	width: 1024px;
 }
-.div-lista {
+#banner1 h1:first-of-type {
+	color: aliceblue;
+	font-weight: 500;
+	padding: 30px;
+	font-size: xx-large;
+}
+/*------------- SOBRE ---------------*/
+#sobre,
+#especialidade {
+	width: 600px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
+.div-lista-medico {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 30px;
+}
+.div-lista {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
 .div-lista ul,
 .div-lista h4 {
 	color: var(--font-color);
+}
+.titulo-lista {
+	font-weight: 500;
+	font-size: 18px;
+	padding: 20px;
+}
+.div-lista ul {
+	margin: 0 0 55px 55px;
+}
+/*------------- MULTIESPECIALIDADE ---------------*/
+#especialidades div:first-of-type {
+	width: 600px;
+	border: red solid 4px;
+	padding: 0 0 40px 0;
+}
+.areas {
+	display: flex;
+	width: 1024px;
+	flex-direction: row;
+}
+.areas figure {
+	width: 320px;
+	height: 320px;
+	box-shadow: #7b797f;
+}
+.areas figure img {
+	background-size: cover;
 }
