@@ -25,17 +25,17 @@ body {
 .container-all {
 	width: 100%;
 }
-.container-1024 {
+.container-big {
 	width: 1024px;
 }
-.container-600 {
+.container-small {
 	width: 600px;
 }
 header {
 	background: #00cad1;
 	height: 70px;
 }
-header .container-1024 {
+header .container-big {
 	justify-content: space-between;
 }
 .logo-topo {
@@ -59,6 +59,7 @@ header .container-1024 {
 	height: 500px;
 	background-image: url("../assets/recepcao.png");
 	background-size: cover;
+	background-position: center;
 }
 #banner h1 {
 	color: white;
@@ -91,8 +92,10 @@ header .container-1024 {
 	height: 200px;
 	transition: 1s;
 }
-.img-areas img:hover {
+.img-areas img:hover,
+figcaption {
 	height: 230px;
+	cursor: pointer;
 	transition: 1s;
 }
 .btn-horarios {
@@ -123,4 +126,42 @@ footer p {
 	color: white;
 	margin: 0;
 	padding: 10px;
+}
+/*---------MEDIA QUERYS----------*/
+@media (max-width: 1024px) {
+	#banner {
+		height: 400px;
+	}
+	.container-big {
+		width: 100%;
+	}
+}
+
+@media (max-width: 768px) {
+	#banner {
+		height: 300px;
+	}
+	.hidden {
+		display: none;
+	}
+	.img-areas {
+		flex-wrap: wrap;
+	}
+}
+@media (max-width: 425px) {
+	header {
+		height: 140px;
+	}
+	header .container-big {
+		flex-direction: column;
+	}
+	.links-topo {
+		border-top: #7b797f42 solid 2px;
+	}
+	#banner {
+		height: 200px;
+	}
+	.img-areas {
+		flex-direction: column;
+	}
 }
