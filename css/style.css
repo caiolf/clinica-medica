@@ -24,15 +24,12 @@ body {
 }
 .container-all {
 	width: 100%;
-	border: red solid 4px;
 }
 .container-1024 {
 	width: 1024px;
-	border: blue solid 4px;
 }
 .container-600 {
 	width: 600px;
-	border: green solid 4px;
 }
 header {
 	background: #00cad1;
@@ -114,6 +111,7 @@ header .container-1024 {
 	padding: 10px;
 }
 footer {
+	margin-top: 20px;
 	background-color: #0d6e71;
 	padding: 20px;
 }
