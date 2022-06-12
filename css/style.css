@@ -4,32 +4,125 @@
 * {
 	font-family: "Source Sans Pro", sans-serif;
 	box-sizing: border-box;
+	color: var(--font-color);
 }
 body {
 	margin: 0;
 	padding: 0;
+}
+.flex-hori {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.flex-vert {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
-header {
-	border: green solid 3px;
+.container-all {
 	width: 100%;
-	display: flex;
-	justify-content: center;
+	border: red solid 4px;
 }
-main {
-}
-.container {
+.container-1024 {
 	width: 1024px;
-	border: red solid 3px;
+	border: blue solid 4px;
 }
-.container-conteudo {
-	border: purple solid 3px;
+.container-600 {
 	width: 600px;
+	border: green solid 4px;
 }
-header .container {
-	display: flex;
+header {
+	background: #00cad1;
+	height: 70px;
+}
+header .container-1024 {
 	justify-content: space-between;
+}
+.logo-topo {
+	height: 60px;
+}
+.links-topo {
+	width: 300px;
+	display: flex;
+	justify-content: space-around;
+	font-size: large;
+}
+.links-topo a {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+.links-topo a:hover {
+	color: blueviolet;
+}
+#banner {
+	height: 500px;
+	background-image: url("../assets/recepcao.png");
+	background-size: cover;
+}
+#banner h1 {
+	color: white;
+	font-weight: 500;
+	font-size: 38px;
+}
+#sobre div:first-child,
+#especialidades div:first-child,
+#contato div:first-child {
+	text-align: center;
+}
+.img-areas {
+	justify-content: space-around;
+}
+.img-areas figure {
+	margin: 0;
+	padding: 0;
+	border-radius: 3px;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.493);
+	margin: 20px;
+}
+.img-areas figcaption {
+	height: 50px;
+	text-align: center;
+	font-size: large;
+	padding: 10px;
+	text-transform: uppercase;
+}
+.img-areas img {
+	height: 200px;
+	transition: 1s;
+}
+.img-areas img:hover {
+	height: 230px;
+	transition: 1s;
+}
+.btn-horarios {
+	background-color: #00cad1;
+	width: 130px;
+	height: 40px;
+}
+.btn-horarios a {
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+}
+#contato h3,
+#contato p {
+	margin: 0;
+	padding: 10px;
+}
+footer {
+	background-color: #0d6e71;
+	padding: 20px;
+}
+footer img {
+	height: 60px;
+}
+footer a,
+footer p {
+	color: white;
+	margin: 0;
+	padding: 10px;
 }
