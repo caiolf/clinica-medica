@@ -5,8 +5,31 @@
 	font-family: "Source Sans Pro", sans-serif;
 	box-sizing: border-box;
 }
-body,
-html {
+body {
 	margin: 0;
 	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+header {
+	border: green solid 3px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+main {
+}
+.container {
+	width: 1024px;
+	border: red solid 3px;
+}
+.container-conteudo {
+	border: purple solid 3px;
+	width: 600px;
+}
+header .container {
+	display: flex;
+	justify-content: space-between;
 }
