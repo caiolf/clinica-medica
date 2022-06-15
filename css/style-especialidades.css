@@ -1,0 +1,84 @@
+/*---------PAGINA ESPECIALIDADES----------*/
+main nav {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 30px;
+}
+main a {
+	text-decoration: underline #00cad1 3px;
+	font-weight: 800;
+	font-size: large;
+	margin: 10px;
+}
+main a:hover {
+	color: green;
+}
+h1 {
+	text-align: center;
+}
+.especialidade {
+	height: 220px;
+	width: 100%;
+}
+.img-tabela {
+	background-size: cover;
+	background-position: center;
+	width: 300px;
+	height: 100%;
+}
+#ortopedia .img-tabela {
+	background-image: url(../assets/ortopedia1.png);
+}
+#pediatria .img-tabela {
+	background-image: url(../assets/pediatra.png);
+}
+#geriatria .img-tabela {
+	background-image: url(../assets/geriatra.png);
+}
+#psicologia .img-tabela {
+	background-image: url(../assets/psicologo.png);
+}
+#fisioterapia .img-tabela {
+	background-image: url(../assets/fisioterapia.png);
+}
+.especialidade img,
+table {
+	height: 100%;
+}
+.especialidade img {
+	width: 250px;
+}
+table {
+	border-collapse: collapse;
+	width: 600px;
+}
+thead {
+	background-color: #00cad1;
+}
+thead th {
+	color: #fff;
+	font-weight: 500;
+}
+tr:nth-of-type(odd) {
+	background-color: rgba(169, 169, 169, 0.473);
+}
+
+@media (max-width: 1024px) {
+	main,
+	section,
+	main div,
+	.container-big,
+	.container-small {
+		width: 100%;
+	}
+	main nav {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+@media (max-width: 768px) {
+	.img-tabela {
+		display: none;
+	}
+}

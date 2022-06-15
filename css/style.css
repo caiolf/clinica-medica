@@ -6,7 +6,8 @@
 	box-sizing: border-box;
 	color: var(--font-color);
 }
-body {
+body,
+html {
 	margin: 0;
 	padding: 0;
 }
@@ -30,6 +31,12 @@ body {
 }
 .container-small {
 	width: 600px;
+}
+section h1,
+section h2,
+section h3,
+section p {
+	text-align: center;
 }
 header {
 	background: #00cad1;
@@ -61,16 +68,16 @@ header .container-big {
 	background-size: cover;
 	background-position: center;
 }
+#banner div {
+	padding: 20px;
+}
 #banner h1 {
 	color: white;
 	font-weight: 500;
 	font-size: 38px;
+	text-align: left;
 }
-#sobre div:first-child,
-#especialidades div:first-child,
-#contato div:first-child {
-	text-align: center;
-}
+
 .img-areas {
 	justify-content: space-around;
 }
@@ -102,6 +109,7 @@ figcaption {
 	background-color: #00cad1;
 	width: 130px;
 	height: 40px;
+	margin: 20px;
 }
 .btn-horarios a {
 	text-decoration: none;
@@ -112,6 +120,10 @@ figcaption {
 #contato p {
 	margin: 0;
 	padding: 10px;
+}
+.mapa {
+	width: 100%;
+	padding: 20px;
 }
 footer {
 	margin-top: 20px;
@@ -127,6 +139,7 @@ footer p {
 	margin: 0;
 	padding: 10px;
 }
+
 /*---------MEDIA QUERYS----------*/
 @media (max-width: 1024px) {
 	#banner {
@@ -151,8 +164,9 @@ footer p {
 @media (max-width: 425px) {
 	header {
 		height: 140px;
+		width: 100%;
 	}
-	header .container-big {
+	header .container-big.flex-hori {
 		flex-direction: column;
 	}
 	.links-topo {
@@ -161,7 +175,15 @@ footer p {
 	#banner {
 		height: 200px;
 	}
+	#banner h1 {
+		font-size: 28px;
+	}
 	.img-areas {
 		flex-direction: column;
+	}
+	#sobre,
+	#contato,
+	#contato div {
+		width: 100%;
 	}
 }
